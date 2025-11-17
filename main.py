@@ -16,7 +16,7 @@ import os
 # Load the precomputed features and filenames
 try:
     feature_list = np.array(pickle.load(open('/your/file/path/embeddings.pkl', 'rb')))
-    filenames = pickle.load(open('/Users/bishal/your/file/path/file_names.pkl', 'rb'))
+    filenames = pickle.load(open('/your/file/path/file_names.pkl', 'rb'))
 except Exception as e:
     st.error(f"Failed to load embeddings or filenames: {e}")
     st.stop()
